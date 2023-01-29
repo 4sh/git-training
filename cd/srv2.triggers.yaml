@@ -1,0 +1,10 @@
+---
+filename: .cloudbuild/cd/server.cloudbuild.yaml
+github:
+  name: company-project
+  owner: company
+  push:
+    tag: R-.*
+name: cd-srv2
+substitutions:
+  _REPO_SETTINGS: -PrepocompanyhUrl=http://repo.company.fr/artifactory -PrepocompanyUser=chef -PrepocompanyPassword=chef
