@@ -5,6 +5,5 @@ github:
   push:
     tag: R-.*
 name: cd-srv
-owner: company
 substitutions:
   _REPO_SETTINGS: -PrepocompanyhUrl=http://repo.company.fr/artifactory -PrepocompanyUser=chef -PrepocompanyPassword=chef
