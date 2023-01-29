@@ -1,0 +1,14 @@
+---
+filename: .cloudbuild/ci/server.cloudbuild.yaml
+includedFiles:
+  - modules/application/Dockerfile
+  - .cloudbuild/ci/server.cloudbuild.yaml
+  - build.gradle.kts
+  - gradlew
+  - gradle/**
+github:
+  name: company-project2
+  owner: company
+  push:
+    branch: ^(.*)$
+name: ci-srv
