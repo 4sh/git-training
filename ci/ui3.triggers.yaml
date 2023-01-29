@@ -1,0 +1,15 @@
+---
+filename: .cloudbuild/ci/ui.cloudbuild.yaml
+github:
+  name: 4sh-4hosting
+  owner: 4sh
+  push:
+    branch: .*
+includedFiles:
+- modules/ui/**
+- modules/ui/Dockerfile
+- .cloudbuild/ci/ui.cloudbuild.yaml
+- build.gradle.kts
+- gradlew
+- gradle/**
+name: ci-ui
